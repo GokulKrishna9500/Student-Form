@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div style="display: grid; justify-content: center;">
+        <h1 style="text-align: center;">Student Form</h1>
+        <div  id="container"  style="text-align: center; display: grid;  border: solid black 1px; padding: 3px;">
+            <div style="display: flex;  justify-content: center;">
+                <div style="display: grid;  padding: 2px;">
+                    <label>Name</label>
+                    <label>Age</label>
+                    <label>Gender</label>
+                    <label>Course</label>
+                    <label>Email</label>
+                </div>
+                <div style="display: grid;  padding: 2px;">
+                    <input id="inputName" type="text">
+                    <input id="inputAge" type="number">
+                    <div style="display:flex; gap: 5px; align-items: center; border: solid black 1px;">
+                        <input type="radio" name="Male" id="inputMale" value="Male">
+                        <label for="" style="border: none !important;">male</label>
+                        <input type="radio" name="Female" id="inputFemale" value="Female">
+                        <label for="" style="border: none !important;">female</label>
+                    </div>
+                    <input id="inputCourse" type="text">
+                    <input id="inputEmail" type="email">
+                </div>
+            </div>
+            <div style="margin-top: 2px; ">
+                <button id="save">Save</button>
+            </div>
+        </div>
+    </div>
+    <div   style="display: flex; justify-content: center; margin-top: 5px;">
+        <table id="container" style="border: solid black 1px;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Course</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td>Gokul</td>
+                    <td>25</td>
+                    <td>Male</td>
+                    <td>FSWD</td>
+                    <td>gokulkrish@gmail.com</td>
+                    <td>
+                        <button id="Del" onclick="del(event)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+
+<script src="./script.js"></script>
+    
+</body>
+
+</html>

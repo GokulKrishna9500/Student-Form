@@ -1,0 +1,30 @@
+body{
+    background-color: antiquewhite;
+}
+
+label{
+    border: solid black 1px; padding: 3px;
+}
+
+#container{
+    background-color: white;
+}
+
+#save{
+    width: 100%; 
+    background-color: aquamarine; 
+    border: solid black 1px; 
+    padding: 2px;
+    cursor: pointer;
+}
+
+tr, th, td{
+    border: solid black 1px; padding: 2px;
+}
+
+#Del{
+    background-color: red;
+    border: solid black 1px;
+    padding: 5px;
+    color: white;
+}
